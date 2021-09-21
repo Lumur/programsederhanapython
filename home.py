@@ -43,7 +43,7 @@ def pembelianbuah():
     angka = int(Jumlah)
     if NamaBuah == "1":
         hasil=Mangga*angka
-        os.system('cls')
+        os.system('clear')
         print(
             '============= RIWAYAT PEMBELIAN BARANG ===========\n'
             'Nama Pembeli'f'\t\t:{NamaPembeli}\n'
@@ -53,13 +53,14 @@ def pembelianbuah():
             'Total Harga' f'\t:Rp.{hasil},00\n'
             
             "\nPEMBAYARAN BERHASIL DILAKUKAN \nPADA TANGGAL",
-            (Waktu.strftime("%w-%B-%Y")), f"\nSEJUMLAH Rp.{hasil},00"
+            (Waktu.strftime("%w-%B-%Y")), f"\nSEJUMLAH Rp.{hasil},00 \n"
+            '=================================================='
         )
     # untuk input teks ke txt
 
     elif NamaBuah == "2":
         hasil = Manggis * angka
-        os.system('cls')
+        os.system('clear')
         print(
             '============= RIWAYAT PEMBELIAN BARANG ===========\n'
             'Nama Pembeli'f'\t\t:{NamaPembeli}\n'
@@ -69,7 +70,8 @@ def pembelianbuah():
             'Total Harga' f'\t:Rp.{hasil},00\n'
             
             "\nPEMBAYARAN BERHASIL DILAKUKAN \nPADA TANGGAL",
-            (Waktu.strftime("%w-%B-%Y")), f"\nSEJUMLAH Rp.{hasil},00"
+            (Waktu.strftime("%w-%B-%Y")), f"\nSEJUMLAH Rp.{hasil},00\n"
+            '=================================================='
         )
     elif NamaBuah == "3":
         hasil = Durian * angka
@@ -83,11 +85,12 @@ def pembelianbuah():
             'Total Harga' f'\t:Rp.{hasil},00\n'
             
             "\nPEMBAYARAN BERHASIL DILAKUKAN \nPADA TANGGAL",
-            (Waktu.strftime("%w-%B-%Y")), f"\nSEJUMLAH Rp.{hasil},00"
+            (Waktu.strftime("%w-%B-%Y")), f"\nSEJUMLAH Rp.{hasil},00\n"
+            '=================================================='
         )
     elif NamaBuah == "4":
         hasil = Apel * angka
-        os.system('cls')
+        os.system('clear')
         print(
             '============= RIWAYAT PEMBELIAN BARANG ===========\n'
             'Nama Pembeli'f'\t\t:{NamaPembeli}\n'
@@ -97,7 +100,8 @@ def pembelianbuah():
             'Total Harga' f'\t:Rp.{hasil},00\n'
             
             "\nPEMBAYARAN BERHASIL DILAKUKAN \nPADA TANGGAL",
-            (Waktu.strftime("%w-%B-%Y")), f"\nSEJUMLAH Rp.{hasil},00"
+            (Waktu.strftime("%w-%B-%Y")), f"\nSEJUMLAH Rp.{hasil},00\n"
+            '================================================='
         )
     else:
         print(
@@ -108,7 +112,7 @@ def pembelianbuah():
 
 
 while True: 
-    os.system('cls')
+    os.system('clear')
     print (
         "========Selamat Datang========\n"
         '[1] Daftar Barang \t'
@@ -117,7 +121,7 @@ while True:
 
     masukkan=input("\nPilih salah satu menu diatas \t:")
     if masukkan =='1':
-        os.system('cls')
+        os.system('clear')
         daftarbuah()
         ulang=input("Balik Ke Halaman Menu? (Y/N)")
         if ulang ==  "N":
@@ -125,14 +129,14 @@ while True:
         elif ulang == "Y":
             print(masukkan)   
         else:
-            os.system('cls')
+            os.system('clear')
             print(
-            "=====================PEMBERITAHUAN========================\n"
+            "==================PEMBERITAHUAN=================\n"
             "Untuk Input Pemilihan Opsi (Y/N) \nHarap Gunakan Huruf Kapital\n"
-            "========================================================\n"
+            "================================================\n"
             )
     elif masukkan =='2':
-        os.system('cls')
+        os.system('clear')
         pembelianbuah()
         ulang=input("Balik Ke Halaman Menu? (Y/N)")
         if ulang ==  "N":
@@ -140,14 +144,14 @@ while True:
         elif ulang == "Y":
             print(masukkan)  
         else:
-            os.system('cls')
+            os.system('clear')
             print(
-            "=====================PEMBERITAHUAN========================\n"
+            "==================PEMBERITAHUAN=================\n"
             "Untuk Input Pemilihan Opsi (Y/N) \nHarap Gunakan Huruf Kapital\n"
-            "========================================================\n"
+            "================================================\n"
             )
     else:
-        os.system('cls')
+        os.system('clear')
         print(
             "================= ERROR 400 ================\n"
             "Maaf Nomor yang anda inputkan tidak tersedia\n"
@@ -159,12 +163,11 @@ while True:
         elif ulang == "Y":
             print(masukkan)  
         else:
-            os.system('cls')
+            os.system('clear')
             print(
-            "=====================PEMBERITAHUAN========================\n"
+            "==================PEMBERITAHUAN=================\n"
             "Untuk Input Pemilihan Opsi (Y/N) \nHarap Gunakan Huruf Kapital\n"
-            "========================================================\n"
+            "================================================\n"
             )
-
 
 
