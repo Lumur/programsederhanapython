@@ -21,7 +21,7 @@ def ketik(text):
 
 # Aplikasi untuk management password
 
-os.system("cls")
+os.system("clear")
 
 print('\33[92m' + "============SELAMAT DATANG==============")
 apk = input("Masukkan nama aplikasi \t:")
