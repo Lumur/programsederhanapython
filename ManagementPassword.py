@@ -23,7 +23,7 @@ def ketik(text):
 
 os.system("cls")
 
-print("============SELAMAT DATANG==============")
+print('\33[92m' + "============SELAMAT DATANG==============")
 apk = input("Masukkan nama aplikasi \t:")
 username = input("Masukkan username atau Email anda \t:")
 password = getpass.getpass("Masukkan Password \t:")
